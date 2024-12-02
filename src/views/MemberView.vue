@@ -15,6 +15,20 @@ const loadMembers = async () => {
     console.log(members.value)
 }
 
+//刪除資料
+const removeHandler = async(_member) =>{
+  //  console.log(_member)
+  if(window.confirm('真的要刪除嗎?')){
+    const response = await fetch(`${API_URL}/${_member.memberId}`,{
+        method:'DELETE'
+    })
+    if(response.ok){
+        alert('刪除完成')
+        loadMembers()
+    }
+  }
+}
+
 loadMembers()
 </script>
 
@@ -40,7 +54,7 @@ loadMembers()
                     <td>
                         <button title="編輯" class="btn btn-secondary mx-3">
                             <I class="bi bi-pencil-square"></i></button>
-                        <button title="刪除" class="btn btn-danger">
+                        <button @click="removeHandler(member)" title="刪除" class="btn btn-danger">
                             <i class="bi bi-trash-fill"></i></button>
 
                     </td>
