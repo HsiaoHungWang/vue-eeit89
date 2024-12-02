@@ -1,21 +1,21 @@
 <script setup>
-import FirstComponent from './components/FirstComponent.vue';
-import AboutView from './views/AboutView.vue';
-import ContactView from './views/ContactView.vue';
-import HomeView from './views/HomeView.vue';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
+import 'bootstrap-icons/font/bootstrap-icons.min.css'
+import NavbarComponent from './components/NavbarComponent.vue';
 
 
 </script>
 
-<template>  
-<h2>Hello Vue!! Tab</h2>
-<FirstComponent></FirstComponent>
-<!-- <first-component></first-component>
- <HomeView></HomeView>
- <AboutView></AboutView>
- <ContactView></ContactView> -->
- <hr />
+<template> 
+<div class="container">
+  <NavbarComponent></NavbarComponent>
+<hr />
+
  <RouterView></RouterView>
+
+</div> 
+
  
 </template>
 
