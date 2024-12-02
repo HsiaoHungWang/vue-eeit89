@@ -22,6 +22,10 @@
          
 <RouterLink to="/contact"  class="nav-link">聯絡我們</RouterLink>
         </li>
+        <li class="nav-item">
+         
+<RouterLink to="/members"  class="nav-link">會員管理</RouterLink>
+        </li>
        
       </ul>
     </div>

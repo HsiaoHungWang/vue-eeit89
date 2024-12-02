@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router"
 import AboutView from "./views/AboutView.vue"
 import ContactView from "./views/ContactView.vue"
 import HomeView from "./views/HomeView.vue"
+import MemberView from "./views/MemberView.vue"
 
 //路由設定 URL > Component
 const routes = [
@@ -20,6 +21,11 @@ const routes = [
     {
         path:'/contact',
         component:ContactView
+    },
+    //http://localhost:5173/members
+    {
+        path:'/members',
+        component:MemberView
     }
 ]
 
