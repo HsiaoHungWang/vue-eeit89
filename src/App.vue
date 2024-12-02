@@ -10,10 +10,13 @@ import HomeView from './views/HomeView.vue';
 <template>  
 <h2>Hello Vue!! Tab</h2>
 <FirstComponent></FirstComponent>
-<!-- <first-component></first-component> -->
+<!-- <first-component></first-component>
  <HomeView></HomeView>
  <AboutView></AboutView>
- <ContactView></ContactView>
+ <ContactView></ContactView> -->
+ <hr />
+ <RouterView></RouterView>
+ 
 </template>
 
 <style scoped>
