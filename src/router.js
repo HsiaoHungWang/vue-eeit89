@@ -10,7 +10,10 @@ const routes = [
     //http://localhost:5173/
     {
         path:'/',
-        component:HomeView
+        component:HomeView,
+        name:'home',
+        alias:'/index'
+       
     },
     //http://localhost:5173/about
     {

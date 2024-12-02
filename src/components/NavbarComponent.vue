@@ -12,7 +12,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <RouterLink to="/" class="nav-link" activeClass="active">首頁</RouterLink>
+          <RouterLink :to="{name:'home'}" class="nav-link" activeClass="active">首頁</RouterLink>
         </li>
         <li class="nav-item">
          
