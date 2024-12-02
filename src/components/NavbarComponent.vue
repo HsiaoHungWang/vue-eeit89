@@ -12,19 +12,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <RouterLink to="/" class="nav-link active">首頁</RouterLink>
+          <RouterLink to="/" class="nav-link" activeClass="active">首頁</RouterLink>
         </li>
         <li class="nav-item">
          
-<RouterLink to="/about"  class="nav-link">關於我們</RouterLink>
+<RouterLink to="/about"  class="nav-link" activeClass="active">關於我們</RouterLink>
         </li>
         <li class="nav-item">
          
-<RouterLink to="/contact"  class="nav-link">聯絡我們</RouterLink>
+<RouterLink to="/contact"  class="nav-link" activeClass="active">聯絡我們</RouterLink>
         </li>
         <li class="nav-item">
          
-<RouterLink to="/members"  class="nav-link">會員管理</RouterLink>
+<RouterLink to="/members"  class="nav-link" activeClass="active">會員管理</RouterLink>
         </li>
        
       </ul>
@@ -34,5 +34,7 @@
 </template>
 
 <style lang="css" scoped>
-
+.active{
+  background-color: lightgray;
+}
 </style>
