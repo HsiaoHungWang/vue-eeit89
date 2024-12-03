@@ -1,4 +1,5 @@
 <script setup>
+import MemberAdd from '@/components/MemberAdd.vue';
 import { ref } from 'vue';
 
 //取得API URL
@@ -35,7 +36,9 @@ loadMembers()
 <template>
     <div>
         <h2>會員管理</h2>
-        <table class="table table-striped table-hover table-bordered">
+        <div class="row">
+            <div class="col-9">
+                <table class="table table-striped table-hover table-bordered">
             <thead class="table-dark">
                 <tr>
                     <th>編號</th>
@@ -61,6 +64,12 @@ loadMembers()
                 </tr>
             </tbody>
         </table>
+            </div>
+            <div class="col-3">
+                <MemberAdd></MemberAdd>
+            </div>
+        </div>
+        
     </div>
 </template>
 
