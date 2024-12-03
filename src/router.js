@@ -5,6 +5,7 @@ import ContactView from "./views/ContactView.vue"
 import HomeView from "./views/HomeView.vue"
 import MemberView from "./views/MemberView.vue"
 import SpotsView from "./views/SpotsView.vue"
+import TodosView from "./views/TodosView.vue"
 
 //路由設定 URL > Component
 const routes = [
@@ -35,6 +36,11 @@ const routes = [
     {
         path:'/spots',
         component:SpotsView
+    },
+    //http://localhost:5173/todos
+    {
+        path:'/todos',
+        component:TodosView
     }
 ]
 
