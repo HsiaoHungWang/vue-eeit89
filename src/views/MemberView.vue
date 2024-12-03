@@ -13,7 +13,6 @@ const loadMembers = async () => {
     const response = await fetch(API_URL)
     const datas = await response.json()
     members.value = datas
-    console.log(members.value)
 }
 
 //刪除資料
@@ -66,7 +65,7 @@ loadMembers()
         </table>
             </div>
             <div class="col-3">
-                <MemberAdd></MemberAdd>
+                <MemberAdd @xyz="loadMembers"></MemberAdd>
             </div>
         </div>
         

@@ -4,6 +4,8 @@ import { ref } from 'vue';
 const BASE_URL = import.meta.env.VITE_APIURL
 const API_URL = `${BASE_URL}/members`
 
+//定義父組件傳入了一個xyz事件
+const emits = defineEmits(['xyz'])
 
 
    const member = ref({
@@ -28,6 +30,8 @@ const API_URL = `${BASE_URL}/members`
             "email":"",
             "age":""
         }
+        //引發xyz事件，就會去執行loadMembers方法
+        emits('xyz')
         alert('新增成功')
     }
     //console.log(member.value)
