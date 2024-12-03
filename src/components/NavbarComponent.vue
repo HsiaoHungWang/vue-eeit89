@@ -26,6 +26,11 @@
          
 <RouterLink to="/members"  class="nav-link" activeClass="active">會員管理</RouterLink>
         </li>
+        <li class="nav-item">
+         
+<RouterLink to="/spots"  class="nav-link" activeClass="active">台北市景點</RouterLink>
+        </li>
+       
        
       </ul>
     </div>
